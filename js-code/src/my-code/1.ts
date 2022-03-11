@@ -2,13 +2,12 @@
  * @Author: baipeiyun
  * @Date: 2022-02-22 20:15:05
  * @LastEditors: baipeiyun
- * @LastEditTime: 2022-02-24 19:30:54
+ * @LastEditTime: 2022-02-25 20:23:59
  * @FilePath: /临时用/fe-interview-100/js-code/src/my-code/1.ts
  * @Description:
  */
 
 // 旋转数组k步
-
 function retate(arr:number[],k:number):number[]{
     if(!arr.length|| k===0) return arr;
     const step = Math.abs(k % arr.length);
@@ -21,10 +20,11 @@ function retate(arr:number[],k:number):number[]{
     }
     return arr;
 
-//     const part1 = arr.splice(-step);
+//  const part1 = arr.splice(-step);
 // const part2 = arr.splice(0,length-step);
 // const part3 = part1.concat(part2);
 // return part3
 }
 
+export default retate
 
